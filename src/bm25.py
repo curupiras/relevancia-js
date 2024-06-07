@@ -123,7 +123,7 @@ class BM25:
         # Para setar o índice é necessário já ter a informação
         self.set_indice_invertido(indice_invertido)
 
-    def set_params(k1=None, b=None, bias_idf=None):
+    def set_params(self, k1=None, b=None, bias_idf=None):
         # Se mudar qualquer parâmetro, tem que reiniciar o score
         # Se mudar o bias_idf, é necessário recalcular o idf
         if k1 is not None:

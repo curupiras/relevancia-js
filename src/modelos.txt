@@ -3,5 +3,18 @@ Usar esses modelos com CLS e mean_pooling:
 https://huggingface.co/rufimelo/Legal-BERTimbau-sts-large-ma-v3
 https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 https://huggingface.co/neuralmind/bert-base-portuguese-cased
+https://huggingface.co/stjiris/bert-large-portuguese-cased-legal-mlm-sts-v1.0
+
+https://huggingface.co/stjiris/bert-large-portuguese-cased-legal-mlm-nli-sts-v1
+https://huggingface.co/Luciano/bert-base-portuguese-cased-finetuned-tcu-acordaos
+
+
 https://platform.openai.com/docs/guides/embeddings/embedding-models
+https://platform.openai.com/docs/guides/embeddings
+
+Possibilidades:
+    Pedir para IA generativa gerar palavras chaves e indexar essas palavra no lugar do enunciado e buscar com BM25 ou embeddings.
+    Fazer fine tunning do modelo, usando normas por exemplo. (llama 3b x bert)
+    Reranking, Muito trabalhoso.
+    
 

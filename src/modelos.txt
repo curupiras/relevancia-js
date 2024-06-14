@@ -4,7 +4,6 @@ https://huggingface.co/rufimelo/Legal-BERTimbau-sts-large-ma-v3
 https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 https://huggingface.co/neuralmind/bert-base-portuguese-cased
 https://huggingface.co/stjiris/bert-large-portuguese-cased-legal-mlm-sts-v1.0
-
 https://huggingface.co/stjiris/bert-large-portuguese-cased-legal-mlm-nli-sts-v1
 https://huggingface.co/Luciano/bert-base-portuguese-cased-finetuned-tcu-acordaos
 
@@ -17,4 +16,19 @@ Possibilidades:
     Fazer fine tunning do modelo, usando normas por exemplo. (llama 3b x bert)
     Reranking, Muito trabalhoso.
     
+    
+##########################################################################################################################################    
+BERT -> fine-tuning do modelo
+cabeça de classificação
 
+Treino:
+ 
+[CLS] ENUNCIADO [SEP] queries positivas [SEP]   -> Classe +
+[CLS] ENUNCIADO [SEP] queries nada a ver [SEP]  -> Classe -
+ 
+Modelo que recebe um enunciado e um conjunto de queries e vai tentar associar a que classe pertence, se a + ou -
+Pesquisa de primeiro estágio retornando, por exemplo, 500 resultados. E aí passa para o segundo estágio de reranking que vai passar todos esses 500 resultados e a query no modelo. E aí ele vai reordenar de acordo com a probabilidade associada a classe +
+ 
+Tem a opção de pular o fine-tuning e usar um modelo pronto (exemplo PTT5-BASE). Fazer o fine-tuning com um modelo que já dá resultados próximos ao BM25 vale a pena.
+
+Para fazer o fine-tuning vamos precisar de dados de treinamento. Não podemos usar nada do qrels como base, senão misturaremos treino/teste. Uma alternativa é pegar os resultados de sinônimos que o Llama3 já extraiu nos testes e usar como exemplos de queries.

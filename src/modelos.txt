@@ -32,3 +32,5 @@ Pesquisa de primeiro estágio retornando, por exemplo, 500 resultados. E aí pas
 Tem a opção de pular o fine-tuning e usar um modelo pronto (exemplo PTT5-BASE). Fazer o fine-tuning com um modelo que já dá resultados próximos ao BM25 vale a pena.
 
 Para fazer o fine-tuning vamos precisar de dados de treinamento. Não podemos usar nada do qrels como base, senão misturaremos treino/teste. Uma alternativa é pegar os resultados de sinônimos que o Llama3 já extraiu nos testes e usar como exemplos de queries.
+
+https://github.com/carisio/IA368-DD_deep_learning_busca/blob/main/2%20-%20classificador%20binario%20-%20reranking%20com%20minilm/notebook/Aula2_classificador_binario_mini_bert.ipynb

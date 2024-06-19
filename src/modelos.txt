@@ -34,3 +34,10 @@ Tem a opção de pular o fine-tuning e usar um modelo pronto (exemplo PTT5-BASE)
 Para fazer o fine-tuning vamos precisar de dados de treinamento. Não podemos usar nada do qrels como base, senão misturaremos treino/teste. Uma alternativa é pegar os resultados de sinônimos que o Llama3 já extraiu nos testes e usar como exemplos de queries.
 
 https://github.com/carisio/IA368-DD_deep_learning_busca/blob/main/2%20-%20classificador%20binario%20-%20reranking%20com%20minilm/notebook/Aula2_classificador_binario_mini_bert.ipynb
+
+########################################
+
+Termos large 100%|██████████| 1/1 [01:06<00:00, 66.04s/it]
+Documentos large 100%|██████████| 32/32 [2:17:35<00:00, 257.99s/it]  
+Termos small 100%|██████████| 1/1 [01:16<00:00, 76.85s/it]
+Documentos small 100%|██████████| 32/32 [1:31:37<00:00, 171.79s/it]

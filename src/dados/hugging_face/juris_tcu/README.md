@@ -18,6 +18,17 @@ JurisTCU addresses these challenges by providing a **qrels-based benchmark** for
 ## Usage
 The dataset can be used to evaluate and benchmark IR systems using both lexical and semantic search techniques. It is particularly useful for researchers focusing on the Portuguese language and legal information retrieval.
 
+### Loading the dataset
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("Leandro/JurisTCU")
+documents = dataset["documents"]
+queries = dataset["queries"]
+qrels = dataset["qrels"]
+```
+
 ## Dataset Structure
 
 The JurisTCU dataset consists of three main files:

@@ -171,7 +171,7 @@ JurisTCU is provided under the XXX license.
 
 - **Leandro dos Santos Ribeiro**  
   Tribunal de Contas da União (TCU), Brasília, Brazil  
-  Email: [leandroribeiro@tcu.gov.br](mailto:leandroribeiro@tcu.gov.br)
+  Email: [leandro.santos.r@gmail.com](mailto:leandro.santos.r@gmail.co)
 
 - **Marcos Vinícius Borela de Castro**  
   Tribunal de Contas da União (TCU), Brasília, Brazil  
